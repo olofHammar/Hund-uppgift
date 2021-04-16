@@ -19,3 +19,8 @@ nav {
     font-weight: bold;
     list-style: none;
 }
+
+.dog-detail {
+    display: flex;
+    flex-direction: column;
+}

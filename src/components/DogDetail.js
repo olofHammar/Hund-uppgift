@@ -27,11 +27,15 @@ function DogDetail({match}) {
             <div className="card">
             <div className="dog_left">
             <img className="dog_detail_image" src={newDog.img} alt={newDog.name}></img>
-            <h2>{newDog.name}</h2> 
+            <h2 className="dog_name">{newDog.name}</h2> 
+            <h3 className="dog_info" id="breed">Breed: {newDog.breed}</h3>
+            <h3 className="dog_info">Age: {newDog.age}</h3>
+            <h3 className="dog_info">Chipnumber: {newDog.chipNumber}</h3>
             </div>
             <div className="dog_right">
-            <h2>Breed: {newDog.breed}</h2>
-            <h2>Owner: {newDog.owner.name} </h2>
+            <h1>Contact</h1>
+            <h2>Name: {newDog.owner.name} {newDog.owner.lastName} </h2>
+            <h2>Phone: {newDog.owner.phoneNumber}</h2>
             </div>
             </div>
         </div>

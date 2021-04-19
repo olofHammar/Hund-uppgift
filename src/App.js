@@ -5,6 +5,7 @@ import Dogs from './components/Dogs';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import DogDetail from './components/DogDetail';
+import Row from './components/Row';
 
 function App() {
   return (

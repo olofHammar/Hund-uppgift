@@ -1,31 +1,137 @@
 .App {
-    text-align: center;
+  height: 100vh;
+  text-align: center;
+  background: rgb(19, 65, 88);
 }
 
+/* NAVIGATION */
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    background: rgb(36, 83, 107);
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(12, 41, 56);
+  color: white;
+}
+
+.dog_logo {
+  display: flex;
+  object-fit: contain;
+  width: 50%;
+  max-height: 70px;
+  padding: 10px;
 }
 
 .nav-links {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: bold;
-    list-style: none;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  margin-inline: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.nav_style {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px;
 }
 
 .dog-detail {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .detail-image {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
+}
+
+.Dogs {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 50px;
+  padding-top: 100px;
+}
+
+/* DOG ROW */
+.row h2 {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  background: rgb(19, 65, 88);
+}
+
+.row_dogs {
+  display: flex;
+  min-height: 200px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgb(12, 41, 56);
+}
+
+.row_dogs::-webkit-scrollbar {
+  display: none;
+}
+
+.row_dog {
+  object-fit: cover;
+  width: 200px;
+  height: 250px;
+  margin-right: 10px;
+  border: 1px solid rgb(8, 29, 39);
+  border-radius: 1px;
+  transition: transform 450ms;
+}
+
+.row_dog:hover {
+  transform: scale(1.08);
+}
+
+/* DOG DETAIL */
+
+.dog_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  padding: 50px;
+  background: wheat;
+}
+
+.dog_left {
+
+}
+
+.dog_right {
+  text-align: start;
+}
+
+.dog_detail_image {
+  object-fit: cover;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  border: 2px solid white;
 }

@@ -1,7 +1,5 @@
 .App {
-  height: 100vh;
   text-align: center;
-  background: rgb(19, 65, 88);
 }
 
 /* NAVIGATION */
@@ -40,35 +38,27 @@ nav {
   padding: 10px;
 }
 
-.dog-detail {
-  display: flex;
-  flex-direction: column;
-}
-
-.detail-image {
-  width: 300px;
-  height: 300px;
-}
-
-.Dogs {
-  height: 100vh;
+.dogs {
+  height: 80vh;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    rgb(8, 29, 39) 50%,
+    rgb(11, 33, 48) 50%
+  );
   justify-content: center;
   align-items: center;
-  vertical-align: middle;
-  margin-top: 50px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
+/* DOG COMPONENT */
 
 /* DOG ROW */
 .row h2 {
   display: flex;
   margin-left: 10px;
-  margin-top: 100px;
   margin-bottom: 10px;
   font-size: 35px;
   font-weight: bold;
   color: white;
-  background: rgb(19, 65, 88);
 }
 
 .row_dogs {
@@ -103,27 +93,44 @@ nav {
 /* DOG DETAIL */
 
 .dog_detail {
+  height: 90vh;
   display: flex;
-  flex-direction: column;
+  padding-top: 10px;
   justify-content: center;
-  align-items: center;
-  padding-top: 50px;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    rgb(8, 29, 39) 50%,
+    rgb(11, 33, 48) 50%
+  );
 }
 
 .card {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  min-width: 600px;
+  height: fit-content;
+  justify-content: space-between;
   margin: 50px;
   padding: 50px;
-  background: wheat;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    rgb(45, 90, 116) 50%,
+    rgb(255, 255, 255) 50%
+  );
+  border-radius: 10px;
 }
 
 .dog_left {
-
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 .dog_right {
+  display: flex;
+  flex-direction: column;
   text-align: start;
+  color: black;
 }
 
 .dog_detail_image {
@@ -134,4 +141,36 @@ nav {
   max-height: 200px;
   border-radius: 50%;
   border: 2px solid white;
+}
+
+.dog_name {
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.dog_info {
+  text-align: start;
+}
+
+#breed {
+  text-transform: capitalize;
+}
+
+/* WELCOME COMPONENT */
+
+.home {
+  height: 90vh;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    rgb(8, 29, 39) 50%,
+    rgb(11, 33, 48) 50%
+  );
+}
+
+.home_title {
+  color: white;
 }

@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
-function Dogs() {
+
+function Dogs(props) {
 
     const [dogs, setDogs] = useState([]);
 
@@ -23,7 +24,7 @@ function Dogs() {
     return (
         <div>
             {dogs.map(dog => (
-                <Link to={`/dogs/${dog.chipNumber}`}>
+                <Link to={`/dogs/${dog.chipNumber}`} key={dog.chipNumber}>
                 <div key={dog.chipNumber}>
                 <img src={dog.img} alt={dog.name}></img>
                 <h1>{dog.name}</h1>

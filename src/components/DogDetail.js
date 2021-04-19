@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 function DogDetail({match}) {
-
+    
     const [newDog, setNewDog] = useState({
         name: '', 
         breed: '',
@@ -18,12 +18,9 @@ function DogDetail({match}) {
         );
 
         const dogs = await data.json();
-        //console.log(dogs);
         dogs.map( dog => {
             if(dog.chipNumber === match.params.id) {
                 setNewDog(dog);
-                console.log(newDog);
-
             }
         })
             
@@ -32,10 +29,10 @@ function DogDetail({match}) {
     return (
         <div className="dog-detail">
             <h2>{newDog.name}</h2> 
-            <img src={newDog.img} alt={newDog.name}></img>
+            <img className="detail-image" src={newDog.img} alt={newDog.name}></img>
             <h2>Breed: {newDog.breed}</h2>
             <h2>Owner: {newDog.owner.name} </h2>
-            
+
 
         </div>
     )

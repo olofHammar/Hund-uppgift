@@ -1,22 +1,23 @@
 import React, {useEffect} from 'react';
-import dog_three_ from './img/dog_three_.png';
 import dog_orange from './img/dog_orange.jpeg';
+import dog_blue from './img/dog_blue.jpeg';
 
 function Home() {
-    /*
-       useEffect(() => {
-        async function fetchData() {
-            fetch('https://api.jsonbin.io/b/5f4d604b514ec5112d136cd6')
-              .then(response => response.json())
-              .then(data => console.log(data));
-        }
-        fetchData();
-    }, []);
-*/
+
     return (
         <div className="home">
-           <h1 className="home_title">Welcome page</h1> 
+        <div className="home_info">
+            <h2 className="home_welcome">Welcome to</h2>
+           <h1 className="home_title">Doggy Daycare</h1>
+           <h3>A place for your dog to meet and play with friends.</h3>
+           <br></br>
+           <p>Click Dogs to checkout our gang.</p>
+           <p>Maybe you'll find some friends.</p>
+         </div>
+        <div className="home_images">
+           <img src={dog_blue} alt="Logo" className="home_image"/>
            <img src={dog_orange} alt="Logo" className="home_image"/>
+          </div>
         </div>
     )
 }

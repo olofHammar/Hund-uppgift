@@ -213,13 +213,13 @@ nav {
 /* HOME COMPONENT */
 
 .home {
-  height: 80%;
-  min-height: 600px;
   display: flex;
-  padding-top: 40px;
-  padding-right: 50px;
+  flex-wrap: wrap;
+  height: 90%;
+  min-height: 600px;
+  width: 100%;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   background-image: -webkit-linear-gradient(
     30deg,
     rgb(8, 29, 39) 50%,
@@ -227,12 +227,52 @@ nav {
   );
 }
 
-.home_title {
-  color: white;
+.home > div {
+  flex: 1 1 150px;
+  height: 500px;
+}
+
+.home_images {
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+  width: 100%;
 }
 
 .home_image {
   object-fit: cover;
-  width: 400px;
-  height: 400px;
+  display: flex;
+  width: 50%;
+  height: 70%;
 }
+
+.home_info {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.home_title {
+  font-size: 55px;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.home_title {
+  color: white;
+}
+
+.home_images {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+.home_info {
+  display: flex;
+  width: 100%;
+}
+*/

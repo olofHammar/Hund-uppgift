@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import dog_three_ from './dog_three_.png';
+import dog_three_ from './img/dog_three_.png';
 
 function Nav() {
     const navStyle = {
@@ -15,7 +15,7 @@ function Nav() {
             </Link>
          <ul className="nav-links">
             <Link className="nav_style" to='/home'>
-                <li>Welcome</li>
+                <li>Home</li>
             </Link>
             <Link className="nav_style" to='/dogs'>
                <li>Dogs</li>

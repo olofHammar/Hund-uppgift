@@ -17,11 +17,12 @@ function DogDetail({match}) {
                 if(dog.chipNumber === match.params.id) {
                     setNewDog(dog);
                 }
+                return console.log('found dog');
             }) 
             return request;
         }
         fetchData();
-    }, []);
+    }, [match.params.id]);
 
     return (
        <div className="dog_detail">

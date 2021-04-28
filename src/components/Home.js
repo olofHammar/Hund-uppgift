@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import dog_orange from './img/dog_orange.jpeg';
 import dog_blue from './img/dog_blue.jpeg';
 

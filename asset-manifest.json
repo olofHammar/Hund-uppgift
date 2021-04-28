@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Hund-uppgift/static/css/main.0f3edf60.chunk.css",
-    "main.js": "/Hund-uppgift/static/js/main.9291da60.chunk.js",
-    "main.js.map": "/Hund-uppgift/static/js/main.9291da60.chunk.js.map",
+    "main.js": "/Hund-uppgift/static/js/main.447bcd5f.chunk.js",
+    "main.js.map": "/Hund-uppgift/static/js/main.447bcd5f.chunk.js.map",
     "runtime-main.js": "/Hund-uppgift/static/js/runtime-main.daae6d54.js",
     "runtime-main.js.map": "/Hund-uppgift/static/js/runtime-main.daae6d54.js.map",
     "static/js/2.40b0e7d4.chunk.js": "/Hund-uppgift/static/js/2.40b0e7d4.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.daae6d54.js",
     "static/js/2.40b0e7d4.chunk.js",
     "static/css/main.0f3edf60.chunk.css",
-    "static/js/main.9291da60.chunk.js"
+    "static/js/main.447bcd5f.chunk.js"
   ]
 }

@@ -101,7 +101,8 @@ nav {
   margin: 0;
   padding: 0;
 }
-/* DOG COMPONENT */
+
+/* DOGS COMPONENT */
 
 .dogs {
   height: 100vh;
@@ -116,7 +117,7 @@ nav {
   padding-top: 50px;
 }
 
-/* DOG ROW */
+/* DOGS COMPONENT / DOGS ROW */
 
 .row h2 {
   display: flex;

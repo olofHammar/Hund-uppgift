@@ -1,8 +1,8 @@
-import './App.css';
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import './App.css';
 import Nav from './components/Nav';
 import Dogs from './components/Dogs';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import DogDetail from './components/DogDetail';
 
